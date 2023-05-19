@@ -19,4 +19,16 @@ module.exports = {
       config: {},
     },
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'bruno222',
+          name: 'flex-electron-app',
+        },
+        draft: true,
+      },
+    },
+  ],
 };
